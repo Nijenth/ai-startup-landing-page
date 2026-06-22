@@ -13,16 +13,16 @@
       <h1>NeuralFlow AI</h1>
 
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Features</a></li>
-        <li><a href="#">About</a></li>
+        <a href="#home">Home</a>
+        <a href="#features">Features</a>
+        <a href="#about">About</a>
       </ul>
 
       <button>Get Started</button>
     </nav>
   </header>
 
-  <section class="hero">
+  <section id="home" class="hero">
     <h2>Build Faster With AI</h2>
 
     <p>
@@ -32,8 +32,10 @@
     <button>Start Free Trial</button>
   </section>
 
-  <section class="features">
+  <section id="features" class="features-section">
 
+    <h2 class="section-title">Features</h2>
+    <div class="features">
     <div class="card">
       <h3>Automation</h3>
       <p>Automate repetitive tasks instantly.</p>
@@ -48,7 +50,21 @@
       <h3>Integrations</h3>
       <p>Connect your favorite tools.</p>
     </div>
+    <div class="card">
+        <h3>Security</h3>
+        <p>Enterprise-grade protection.</p>
+      </div>
 
+    </div>
+</section>
+
+<section id="about" class="features-section">
+    <h2 class="section-title">About Us</h2>
+  
+    <p style="text-align:center; max-width:700px; margin:auto;">
+      NeuralFlow AI helps businesses automate workflows,
+      analyze data, and accelerate growth using artificial intelligence.
+    </p>
   </section>
 
   <script src="script.js"></script>

@@ -2,6 +2,6 @@ const buttons = document.querySelectorAll("button");
 
 buttons.forEach(button => {
   button.addEventListener("click", () => {
-    alert("Thanks for checking out NeuralFlow AI!");
+    alert("Welcome to NeuralFlow AI!");
   });
 });
