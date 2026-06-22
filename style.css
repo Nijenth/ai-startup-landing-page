@@ -11,11 +11,11 @@
     font-family:'Inter', sans-serif;
     background:linear-gradient(
       135deg,
-      #020617,
-      #0f172a,
-      #1e293b
+      #f5f3ff,
+      #ede9fe,
+      #ddd6fe
     );
-    color:white;
+    color:#1e1b4b;
   }
   
   nav{
@@ -35,8 +35,15 @@
   }
   
   a{
-    color:white;
+    color:#312e81;
     text-decoration:none;
+    display:inline-block;
+    transition:0.3s;
+  }
+  
+  a:hover{
+    color:#8b5cf6;
+    transform:translateY(-3px) scale(1.1);
   }
   
   button{
@@ -45,12 +52,12 @@
     border-radius:8px;
     cursor:pointer;
     transition:0.3s;
-    background: #3b82f6;
-    color: white;
+    background:#8b5cf6;
+    color:white;
   }
   
   button:hover{
-    transform:translateY(-3px);
+        transform:translateY(-3px) scale(1.1);
   }
   
   .hero{
@@ -91,19 +98,32 @@
   gap:20px;
 }
 
-  .card{
-    background:rgba(30,41,59,0.8);
-    padding:30px;
-    border-radius:16px;
-    transition:0.3s;
-    border:1px solid rgba(255,255,255,0.08);
-  }
+.card{
+  background:rgba(255,255,255,0.7);
+  padding:30px;
+  border-radius:16px;
+  transition:0.3s;
+  border:1px solid rgba(139,92,246,0.15);
+  backdrop-filter:blur(10px);
+}
   
   .card:hover{
     transform:translateY(-10px);
     box-shadow:0 10px 30px rgba(59,130,246,0.3);
   }
   
+  .hero::before{
+    content:"";
+    position:absolute;
+    width:400px;
+    height:400px;
+    background:#a855f7;
+    filter:blur(180px);
+    opacity:.25;
+    border-radius:50%;
+    z-index:-1;
+}
+
   @media(max-width:768px){
   
     nav{
@@ -113,18 +133,5 @@
   
     .hero h2{
       font-size:2.5rem;
-    }
-
-    .hero::before{
-        content:"";
-        position:absolute;
-        width:400px;
-        height:400px;
-        background:#3b82f6;
-        filter:blur(180px);
-        opacity:.25;
-        border-radius:50%;
-        z-index:-1;
-      }
-  
+    }  
   }
